@@ -1,0 +1,49 @@
+/* Animasyonlar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.3s ease-in-out;
+}
+
+/* Genel Stiller */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Karanlık Mod Geçişleri */
+.dark {
+    color-scheme: dark;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 640px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+}
